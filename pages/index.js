@@ -13,11 +13,15 @@ import FAQ from "../components/FAQ";
 import FooterSection from "../components/FooterSection";
 import { useAmp } from "next/amp";
 import NavBar from "@/components/NavBar";
+import Head from "next/head";
 export const config = { amp: "hybrid" };
 export default function Home() {
   const isAmp = useAmp();
   return (
     <div>
+      <Head>
+        <title>The amp</title>
+      </Head>
       <NavBar />
       <MainHeader />
       <FormSearch />

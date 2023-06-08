@@ -70,13 +70,6 @@ function NavBar() {
             <li className="text-lg font-Roboto capitalize hover:text-[#00AEFF] ">
               <Link href={"/"}>Blog</Link>
             </li>
-            <li className="text-lg font-Roboto capitalize hover:text-[#00AEFF] ">
-              {/* <p>
-                <Link href={isAmp ? "/" : "/?amp=1"}>
-                  {isAmp ? "View Non-AMP" : "View AMP"} Version
-                </Link>
-              </p> */}
-            </li>
           </ul>
           {/*login and Register  */}
           <div className=" gap-4  hidden md:flex">
@@ -117,13 +110,6 @@ function NavBar() {
           <li className=" text-lg text-[#051036]  font-semibold font-sans py-4  hover:text-[#3554d1] hover:bg-[#3554d10d] px-2 cursor-pointer"></li>
           <li className=" text-lg text-[#051036]  font-semibold font-sans py-4  hover:text-[#3554d1] hover:bg-[#3554d10d] px-2 cursor-pointer">
             <Link href={"/list_blog"}>Blog</Link>
-          </li>
-          <li className="text-lg font-Roboto capitalize hover:text-[#00AEFF] ">
-            {/* <p>
-              <Link href={isAmp ? "/" : "/?amp=1"}>
-                {isAmp ? "View Non-AMP" : "View AMP"} Version
-              </Link>
-            </p> */}
           </li>
         </ul>
       </div>
