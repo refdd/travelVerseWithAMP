@@ -48,12 +48,21 @@ function MainCard() {
                 <div className="relative overflow-hidden w-full h-[200px]  ">
                   {isAmp ? (
                     <amp-img
-                      width="300"
-                      height="300"
-                      src="https://amp.dev/static/inline-examples/images/mountains.jpg"
-                      alt="a cool image"
+                      alt="Mountains"
+                      width="550"
+                      height="368"
                       layout="responsive"
-                    />
+                      src="https://amp.dev/static/inline-examples/images/mountains.webp"
+                    >
+                      <amp-img
+                        alt="Mountains"
+                        fallback=""
+                        width="550"
+                        height="368"
+                        layout="responsive"
+                        src="https://amp.dev/static/inline-examples/images/mountains.jpg"
+                      ></amp-img>
+                    </amp-img>
                   ) : (
                     <Image
                       src={item.imageUrl}
