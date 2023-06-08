@@ -47,22 +47,7 @@ function MainCard() {
                 {/* image and countary*/}
                 <div className="relative overflow-hidden w-full h-[200px]  ">
                   {isAmp ? (
-                    <amp-img
-                      alt="Mountains"
-                      width="550"
-                      height="368"
-                      layout="responsive"
-                      src="https://amp.dev/static/inline-examples/images/mountains.webp"
-                    >
-                      <amp-img
-                        alt="Mountains"
-                        fallback=""
-                        width="550"
-                        height="368"
-                        layout="responsive"
-                        src="https://amp.dev/static/inline-examples/images/mountains.jpg"
-                      ></amp-img>
-                    </amp-img>
+                    "amp is already in progress"
                   ) : (
                     <Image
                       src={item.imageUrl}
