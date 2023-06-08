@@ -14,28 +14,31 @@ import FooterSection from "../components/FooterSection";
 import { useAmp } from "next/amp";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
+import Layout from "@/components/Layout";
 export const config = { amp: "hybrid" };
 export default function Home() {
   const isAmp = useAmp();
   return (
-    <div>
-      <Head>
-        <title>The amp</title>
-      </Head>
-      <NavBar />
-      <MainHeader />
-      <FormSearch />
-      <ChooseUs />
-      <div className=" container mx-auto px-4 md:px-9 pt-11">
-        <PackageContainer />
-        <GroupPackage />
+    <Layout>
+      <div>
+        <Head>
+          <title>The amp</title>
+        </Head>
+        <NavBar />
+        <MainHeader />
+        <FormSearch />
+        <ChooseUs />
+        <div className=" container mx-auto px-4 md:px-9 pt-11">
+          <PackageContainer />
+          <GroupPackage />
+        </div>
+        <DellorYourTrips />
+        <Galliry />
+        <Reviews />
+        <FeaturedArticles />
+        <FAQ />
+        <FooterSection />
       </div>
-      <DellorYourTrips />
-      <Galliry />
-      <Reviews />
-      <FeaturedArticles />
-      <FAQ />
-      <FooterSection />
-    </div>
+    </Layout>
   );
 }

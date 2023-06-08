@@ -50,7 +50,7 @@ function MainCard() {
                     <amp-img
                       width="300"
                       height="300"
-                      src={item.imageUrl}
+                      src="https://amp.dev/static/inline-examples/images/mountains.jpg"
                       alt="a cool image"
                       layout="responsive"
                     />
