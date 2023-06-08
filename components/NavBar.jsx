@@ -6,6 +6,7 @@ import logo from "../public/assets/images/setting163264951061504126eaf41.png";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useAmp } from "next/amp";
+import { useRouter } from "next/router";
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -22,7 +23,7 @@ function NavBar() {
     setDisableScroll(!disableScroll);
   }
   const isAmp = useAmp();
-
+  const router = useRouter();
   return (
     <div className=" relative bg-white ">
       <div className=" container md:w-[90%] mx-auto ">
@@ -70,11 +71,11 @@ function NavBar() {
               <Link href={"/"}>Blog</Link>
             </li>
             <li className="text-lg font-Roboto capitalize hover:text-[#00AEFF] ">
-              <p>
-                <a href={isAmp ? "/" : "/?amp=1"}>
+              {/* <p>
+                <Link href={isAmp ? "/" : "/?amp=1"}>
                   {isAmp ? "View Non-AMP" : "View AMP"} Version
-                </a>
-              </p>
+                </Link>
+              </p> */}
             </li>
           </ul>
           {/*login and Register  */}
@@ -118,11 +119,11 @@ function NavBar() {
             <Link href={"/list_blog"}>Blog</Link>
           </li>
           <li className="text-lg font-Roboto capitalize hover:text-[#00AEFF] ">
-            <p>
-              <a href={isAmp ? "/dog" : "/dog?amp=1"}>
+            {/* <p>
+              <Link href={isAmp ? "/" : "/?amp=1"}>
                 {isAmp ? "View Non-AMP" : "View AMP"} Version
-              </a>
-            </p>
+              </Link>
+            </p> */}
           </li>
         </ul>
       </div>
