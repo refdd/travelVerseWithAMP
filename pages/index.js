@@ -15,7 +15,7 @@ import { useAmp } from "next/amp";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
 import Layout from "@/components/Layout";
-export const config = { amp: "hybrid" };
+export const config = { amp: true };
 export default function Home() {
   const isAmp = useAmp();
   return (
